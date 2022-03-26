@@ -1,0 +1,42 @@
+SDTrimSP - Sun Jan 2 18:18:30 2022
+&TRI_INP
+text='---elements---'
+	ncp = 2
+	symbol = "H", "Si"
+	!occurrence = 10, 01
+	!globaldensity = False, 0.0
+	inel0 = 4, 3
+
+text='---general---'
+	nh = 1000
+	idout = 10
+	nr_pproj = 100
+	flc = 1.0
+	idrel = 1
+	ipot = 1
+	iintegral = 2
+	isbv = 1
+
+text='---beam---'
+	qubeam = 1.0, 0.0
+	case_e0 = 0
+	e0 = 100000.0, 0.0
+	case_alpha = 0
+	alpha0 = 0.0, 0.0
+
+text='---target---'
+	qu = 0.0, 1.0
+	qumax = 1.0, 1.0
+	ttarget = 200000
+	nqx = 2000
+	iq0 = 0
+
+text='---output options---'
+	lparticle_p = .false.
+	lparticle_r = .false.
+	lmatrices = .false.
+
+text='---extra---'
+	tableinp = "C:/SDTrimSP_6.01/tables"
+
+/

@@ -1,0 +1,44 @@
+SDTrimSP - Sun Jan 2 17:20:56 2022
+&TRI_INP
+text='---elements---'
+	ncp = 2
+	symbol = "D", "Fe"
+	!occurrence = 10, 01
+	!globaldensity = False, 0.0
+	inel0 = 3, 3
+
+text='---general---'
+	nh = 10000
+	idout = 10
+	nr_pproj = 100
+	flc = 1.0
+	idrel = 1
+	ipot = 1
+	iintegral = 2
+	isbv = 1
+
+text='---beam---'
+	qubeam = 1.0, 0.0
+	case_e0 = 0
+	e0 = 500.0, 0.0
+	case_alpha = 0
+	alpha0 = 60.0, 0.0
+
+text='---target---'
+	qu = 0.0, 1.0
+	qumax = 1.0, 1.0
+	ttarget = 2000
+	nqx = 200
+	iq0 = 0
+
+text='---output options---'
+	ioutput_part(2) = 1000000
+	lparticle_p = .true.
+	ioutput_part(5) = 100000000
+	lparticle_r = .true.
+	lmatrices = .false.
+
+text='---extra---'
+	tableinp = "C:/SDTrimSP_6.01/tables"
+
+/

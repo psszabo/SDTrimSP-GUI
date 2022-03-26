@@ -1,0 +1,48 @@
+2 keV Ar -> Fe2O3
+&TRI_INP
+text='---elements---'
+	ncp = 3
+	symbol = "Ar", "Fe", "O"
+	!occurrence = 10, 01, 01
+	!globaldensity = False, 0.0
+	inel0 = 3, 3, 3
+
+text='---general---'
+	nh = 2000
+	idout = -1
+	nr_pproj = 100
+	flc = 2.0
+	idrel = 0
+	ipot = 1
+	iintegral = 2
+	isbv = 1
+
+text='---beam---'
+	qubeam = 1.0, 0.0, 0.0
+	case_e0 = 0
+	e0 = 2000.0, 0.0, 0.0
+	case_alpha = 0
+	alpha0 = 60.0, 0.0, 0.0
+
+text='---target---'
+	qu = 0.0, 0.4, 0.6
+	qumax = 0.0, 1.0, 1.0
+	ttarget = 500
+	nqx = 100
+	iq0 = 0
+
+text='---output options---'
+	lparticle_p = .false.
+	lparticle_r = .false.
+	lmatrices = .false.
+
+text='---extra---'
+	tableinp = "C:/SDTrimSP_6.01/tables"
+	nm = 5
+	two_comp = "Fe2O3"
+	nm1=2
+	nm2=3
+	qu_int = .true.
+	case_layer_thick = 2
+
+/
