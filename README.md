@@ -1,6 +1,6 @@
 **SDTrimSP GUI - a graphical user interface for SDTrimSP to simulate sputtering, ion implantation and the dynamic effects of ion irradiation**
 
-Copyright(C) 2022, Paul S.Szabo, David Weichselbaum, Herbert Biber, Christian Cupak, Andreas Mutzke, Richard A.Wilhelm, Friedrich Aumayr
+Copyright(C) 2022, Paul S. Szabo, David Weichselbaum, Herbert Biber, Christian Cupak, Andreas Mutzke, Richard A. Wilhelm, Friedrich Aumayr
 
 The GUI is publicly available online on github (https://github.com/psszabo/SDTrimSP-GUI) and distributed under the GPLv3 license. The GUI is described in a manuscript that is currently being submitted to Nuclear Instruments and Methods in Physics Research Section B. One condition for usage of the GUI program is that this manuscript is cited in any publication that presents results achieved with the GUI.
 
