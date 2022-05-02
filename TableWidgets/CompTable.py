@@ -36,7 +36,7 @@ class CompRow(CustomRow):
     elementChanged = pyqtSignal(Element)
     selectElementText = '...'
     inelLossModelLabels = ['1: Lindhard-Scharff', '2: Oen-Robinson', '3: average of (1) and (2) (default)',
-                        '4: H,D,T', '5: He3,He4', '6: Ziegler']
+                        '4: H,D,T (>25 keV)', '5: He3,He4 (>100 keV)', '6: Ziegler']
     inelLossModelTooltips = ['Necessary condition: E < 25 · Z^(4/3) · M (in keV) where E, Z, M are the energy, the atomic number and the atomic mass of the moving particle',
                              'Necessary condition:E < 25 · Z^(4/3) · M (in keV)',
                              'Equipartition of Lindhard-Scharff and Oen-Robinson',
