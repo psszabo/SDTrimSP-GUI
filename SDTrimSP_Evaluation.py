@@ -1058,7 +1058,7 @@ class SDTrimSP_Evaluation:
             self.plot.axes.plot(angles[:last_index], total_yield[:last_index], 'o', label="Total", color=self.first_color)
             data.append(total_yield[:last_index])
             plotLabels.append("Total")
-            plotLabels.append(fit_params_string)
+        plotLabels.append(fit_params_string)
 
         self.plot.axes.set_xlabel("Angle of Incidence $\\alpha$ [°]")
         self.plot.axes.set_ylabel("Sputtering Yield Y [atoms/ion]")
