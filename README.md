@@ -7,6 +7,8 @@ P. S. Szabo, et al. Nucl. Instrum. Meth. Phys. Res. B  (2022) https://doi.org/10
 
 This GUI companion program for the simulation code SDTrimSP is written in Python 3 based on the PyQt5 package that implements the software  toolkit Qt for creating graphical user interfaces with Python. It has been tested under Python 3.7, 3.8 and 3.9 on Linux, Windows and Mac operating systems. It supports SDTrimSP versions 6.01 and newer, with 6.06 being the latest available version at the time of the publication of this article. SDTrimSP itself is not included in this repository, if you want to acquire it, please contact sdtrimsp@ipp.mpg.de.
 
+An extended version of the GUI fr running both SDTrimSP and TRIDYN simulations has recently been developed (available at https://github.com/atomicplasmaphysics/BCA-GUIDE, see also https://www.iap.tuwien.ac.at/www/atomic/bca-guis).
+
 **Setup**
 
 - 	If not already installed, download and install Python 3 (https://www.python.org/downloads/). We recommend one of the above mentioned versions 3.7, 3.8 or 3.9. 
