@@ -11,7 +11,7 @@ An extended version of the GUI, called **BCA-GUIDE**, for running both SDTrimSP 
 
 **Setup**
 
-- 	If not already installed, download and install Python 3 (https://www.python.org/downloads/). We recommend one of the above mentioned versions 3.7, 3.8 or 3.9. 
+- 	If not already installed, download and install Python 3 (https://www.python.org/downloads/). We recommend one of the above mentioned versions 3.7, 3.8, 3.9, 3.10, or 3.11. 
 
 -	Install following Python packages: scipy, matplotlib, numpy and PyQt5. 
 
