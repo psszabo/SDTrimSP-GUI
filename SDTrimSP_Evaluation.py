@@ -322,7 +322,8 @@ class SDTrimSP_Evaluation:
             surf[hist_counter] = float(hist_pars[1])
 
             # read surface atomic fractions
-            surface_conc[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            #surface_conc[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            surface_conc[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(float)
             if np.sum(surface_conc[hist_counter]) < 1.:
                 surface_conc[hist_counter,0] = 1. - np.sum(surface_conc[hist_counter])
 
@@ -331,25 +332,29 @@ class SDTrimSP_Evaluation:
             f.readline()
 
             # read number of projectiles
-            nr_projectiles_array_per_element[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            #nr_projectiles_array_per_element[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            nr_projectiles_array_per_element[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(float)
             nr_projectiles_array[hist_counter] = np.sum(nr_projectiles_array_per_element[hist_counter,:])
 
             # read number of backscattered particles
-            nr_reflected[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            #nr_reflected[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            nr_reflected[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(float)
 
             # skip energy of backscattered particles, and number and energy of transmitted projectiles
             for i in range(3):
                 f.readline()
 
             # read number of backsputtered particles
-            nr_sputtered[hist_counter, :] = np.array( f.readline().split()[0:ncp]).astype(np.float)
+            #nr_sputtered[hist_counter, :] = np.array( f.readline().split()[0:ncp]).astype(np.float)
+            nr_sputtered[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(float)
 
             # skip energy of backsputtered particles , and number, energy of transmitted sputtered particles, energy of all projectiles
             for i in range(4):
                 f.readline()
 
             # read number of reemitted atoms
-            nr_reemitted[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            #nr_reemitted[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(np.float)
+            nr_reemitted[hist_counter, :] = np.array(f.readline().split()[0:ncp]).astype(float)
 
             # chemical erosion --> not recorded further
             f.readline()
@@ -363,7 +368,8 @@ class SDTrimSP_Evaluation:
 
             for i in range(0, nqx):
                 #f.readline()
-                layer_line = np.array(f.readline().split()).astype(np.float)
+                #layer_line = np.array(f.readline().split()).astype(np.float)
+                layer_line = np.array(f.readline().split()).astype(float)
                 depth_array[i] = layer_line[0]
                 # read layer concentrations for all ncp elements
                 for j in range(0, ncp):
