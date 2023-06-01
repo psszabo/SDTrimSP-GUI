@@ -125,7 +125,8 @@ class TargetLayersTable(CustomTable):
         for e in targetLayerEntries:
             self.addRow()
         for i,e in enumerate(targetLayerEntries):
-            self.rows[i].setRowData(e.segmentCount, e.segmentThickness, e.abundances, e.layerName)
+            #self.rows[i].setRowData(e.segmentCount, e.segmentThickness, e.abundances, e.layerName)
+            self.rows[i].setRowData(int(e.segmentCount), e.segmentThickness, e.abundances, e.layerName)
         self.updateLayers()
 
     def removeCustomRow(self, rowIdx):

@@ -123,6 +123,7 @@ class CompRow(CustomRow):
         self.atomicDensity.setValue(atomicDensity)
         self.surfBindEnergy.setValue(surfBindEnergy)
         self.displEnergy.setValue(displEnergy)
+        #print(inelLossModel)
         self.inelLossModel.setCurrentIndex(inelLossModel)
 
     def updateHighlight(self, syncedValue):
@@ -194,7 +195,9 @@ class CompTable(CustomTable):
     def addRows(self, compEntries):
         for e in compEntries:
             row = self.addRow()
-            row.setRowData(e.element, e.maxConcentration, e.atomicDensity, e.surfBindEnergy, e.displEnergy, e.inelLossModel)
+            #row.setRowData(e.element, e.maxConcentration, e.atomicDensity, e.surfBindEnergy, e.displEnergy, e.inelLossModel)
+            row.setRowData(e.element, e.maxConcentration, e.atomicDensity, e.surfBindEnergy, e.displEnergy,
+                           int(e.inelLossModel))
 
     def removeCustomRow(self, rowIdx):
         super().removeCustomRow(rowIdx)

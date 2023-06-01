@@ -91,7 +91,8 @@ class BeamCompTable(CompTable):
         for e in beamCompEntries:
             row = self.addRow()
             row.setRowData(e.element, e.abundance, e.kinEnergy, e.angle, e.maxConcentration,\
-                           e.atomicDensity, e.surfBindEnergy, e.displEnergy, e.inelLossModel)
+                           #e.atomicDensity, e.surfBindEnergy, e.displEnergy, e.inelLossModel)
+                           e.atomicDensity, e.surfBindEnergy, e.displEnergy, int(e.inelLossModel))
 
     def removeCustomRow(self, rowIdx):
         super().removeCustomRow(rowIdx)

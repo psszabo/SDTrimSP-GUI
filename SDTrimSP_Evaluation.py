@@ -1221,7 +1221,7 @@ class SDTrimSP_Evaluation:
         #     try:
         #         for i in range(0, last_index-1):
         #             energy_distance_weights[i] = 1./(energies[i+1]-energies[i])
-        #         popt, pcov = scipy.optimize.curve_fit(self.eckstein_energy_fit, energies[:last_index], total_yield[:last_index])
+        #         popt, pcov = scipy.optimize.curve_fit(self.eckstein_energy_fit, (energies[:last_index])[total_yield[:last_index] > 5e-3], (total_yield[:last_index])[total_yield[:last_index] > 5e-3])
         #         energies_fit = np.arange(0., np.max(energies), 1.)
         #         self.plot.axes.plot(energies_fit, self.eckstein_energy_fit(energies_fit, *popt), 'k--', label=f'Eckstein Fit',
         #                             linewidth=1.)
