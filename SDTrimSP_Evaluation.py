@@ -812,7 +812,8 @@ class SDTrimSP_Evaluation:
             if proj_or_rec == 'p':
                 hist, bin_edges = np.histogram(energies, density=True, bins=100)
             else: # use very fine resolution in binning for sputtered atoms because lower energies are of more interest
-                hist, bin_edges = np.histogram(energies, density=True, bins=int(np.max(energies)/0.2))
+                #hist, bin_edges = np.histogram(energies, density=True, bins=int(np.max(energies)/0.2))
+                hist, bin_edges = np.histogram(energies, density=True, bins=200)
             #delta_bin_edges = bin_edges[1] - bin_edges[0]
             bin_edges_new = 0.5*(bin_edges[:-1] + bin_edges[1:])
             self.plot.axes.plot(bin_edges_new, hist, label=self.elements[i],linewidth=2., color=self.colors[i])
