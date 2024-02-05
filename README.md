@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/474205992.svg)](https://zenodo.org/doi/10.5281/zenodo.10622329)
+
 **SDTrimSP GUI - a graphical user interface for SDTrimSP to simulate sputtering, ion implantation and the dynamic effects of ion irradiation**
 
 Copyright(C) 2022, Paul S. Szabo, David Weichselbaum, Herbert Biber, Christian Cupak, Andreas Mutzke, Richard A. Wilhelm, Friedrich Aumayr
