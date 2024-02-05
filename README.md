@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/474205992.svg)](https://zenodo.org/doi/10.5281/zenodo.10622329)
+**Code:** [![DOI](https://zenodo.org/badge/474205992.svg)](https://zenodo.org/doi/10.5281/zenodo.10622329) **Paper:** https://doi.org/10.1016/j.nimb.2022.04.008
 
 **SDTrimSP GUI - a graphical user interface for SDTrimSP to simulate sputtering, ion implantation and the dynamic effects of ion irradiation**
 
